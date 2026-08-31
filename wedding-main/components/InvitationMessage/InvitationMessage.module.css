@@ -1,0 +1,58 @@
+.section {
+  padding:
+    35px
+    20px
+    45px;
+    background: #f3e8dc;
+}
+
+.card {
+  padding:
+    30px
+    20px;
+
+  text-align: center;
+
+  background:
+    rgba(255, 255, 255, 0.45);
+
+  border:
+    1px solid
+    rgba(150, 110, 85, 0.12);
+
+  border-radius: 22px;
+}
+
+.card h2 {
+  color: #75464d;
+
+  font-family:
+    "Great Vibes",
+    cursive;
+
+  font-size: 33px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+.card p {
+  margin-top: 18px;
+
+  color: #514445;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+}
+
+.ornament {
+  margin: 17px 0;
+
+  color: #aa7e40;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+}

@@ -1,0 +1,102 @@
+/* Countdown.module.css */
+
+.countdownSection {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  background: #f3e8dc;
+}
+
+.title {
+  margin: 0 0 25px;
+
+  color: #75464d;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 19px;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+}
+
+.countdownGrid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 8px;
+
+  width: 100%;
+  max-width: 390px;
+
+  margin: 0 auto;
+}
+
+.timeCard {
+  padding: 17px 4px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  border: 1px solid rgba(170, 126, 64, 0.2);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 6px 15px rgba(70, 50, 35, 0.05);
+}
+
+.number {
+  display: block;
+
+  color: #75464d;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+.label {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #67595a;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  letter-spacing: 0.8px;
+}
+
+/* Petit écran */
+
+@media (max-width: 360px) {
+  .countdownSection {
+    padding: 35px 12px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .countdownGrid {
+    gap: 5px;
+  }
+
+  .timeCard {
+    padding: 14px 2px;
+  }
+
+  .number {
+    font-size: 25px;
+  }
+
+  .label {
+    font-size: 8px;
+  }
+}

@@ -78,6 +78,22 @@ export default function Hero({ onOpenMenu }) {
   '--drift': '55px',
 }}
   />
+  <Image
+    src="/svg/hero/petals/petal.svg"
+    alt=""
+    width={28}
+    height={20}
+    className={styles.petal}
+    style={{
+  '--x': '10%',
+  '--y': '38%',
+  '--size': '18px',
+  '--duration': '18s',
+  '--delay': '-5s',
+  '--rotation': '35deg',
+  '--drift': '55px',
+}}
+  />
 
   <Image
     src="/svg/hero/petals/petal.svg"
@@ -137,8 +153,8 @@ export default function Hero({ onOpenMenu }) {
     height={20}
     className={styles.petal}
  style={{
-  '--x': '8%',
-  '--y': '18%',
+  '--x': '9%',
+  '--y': '55%',
   '--size': '18px',
   '--duration': '18s',
   '--delay': '-5s',
@@ -472,6 +488,25 @@ export default function Hero({ onOpenMenu }) {
         </div>
 
       </div>
+      {/* =====================================================
+    BOTTOM WAVES
+===================================================== */}
+
+<div className={styles.waveBack}>
+  <Image
+    src="/svg/hero/waves/wave-back.svg"
+    alt=""
+    fill
+  />
+</div>
+
+<div className={styles.waveFront}>
+  <Image
+    src="/svg/hero/waves/wave-front.svg"
+    alt=""
+    fill
+  />
+</div>
 
     </section>
   );

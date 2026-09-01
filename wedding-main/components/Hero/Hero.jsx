@@ -492,21 +492,15 @@ export default function Hero({ onOpenMenu }) {
     BOTTOM WAVES
 ===================================================== */}
 
-<div className={styles.waveBack}>
+<div className={styles.wave}>
   <Image
-    src="/svg/hero/waves/wave-back.svg"
+    src="/svg/hero/waves/wave.svg"
     alt=""
     fill
   />
 </div>
 
-<div className={styles.waveFront}>
-  <Image
-    src="/svg/hero/waves/wave-front.svg"
-    alt=""
-    fill
-  />
-</div>
+
 
     </section>
   );

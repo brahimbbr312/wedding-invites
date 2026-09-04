@@ -1,10 +1,28 @@
 /* Countdown.module.css */
 
+/* ============================================================
+   BOTTOM WAVES
+============================================================ */
+
+
+.wave {
+  width: 100%;
+  height: auto !important;
+    position: absolute;
+  left: 0;
+ top: -28% !important;
+
+  z-index: 8;
+  pointer-events: none;
+   filter: drop-shadow(0 -50px 26px #e1cdba);
+}
+
 .countdownSection {
   width: 100%;
   padding: 40px 20px;
   text-align: center;
   background: #FAF6F0;
+  position: relative;
 }
 
 .title {

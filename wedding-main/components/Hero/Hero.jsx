@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Header from '../Header/Header';
 import styles from "./Hero.module.css";
+import BotanicalTree from './BotanicalTree';
 
 
 
@@ -32,21 +33,9 @@ export default function Hero({ onOpenMenu }) {
           />
         </div>
 
-
-        {/* =========================================
-      LEFT FLOWERS
-
-      Add your flower image/SVG here.
-
-      Example:
-
-      <Image
-        src="/images/hero/flowers-left.png"
-        alt=""
-        fill
-        className={styles.flowersLeft}
-      />
-  ========================================= */}
+<div className={styles.leftTree}>
+        <BotanicalTree side="left" />
+      </div>
 
 
         {/* =========================================
@@ -488,17 +477,7 @@ export default function Hero({ onOpenMenu }) {
         </div>
 
       </div>
-      {/* =====================================================
-    BOTTOM WAVES
-===================================================== */}
 
-<div className={styles.wave}>
-  <Image
-    src="/svg/hero/waves/wave.svg"
-    alt=""
-    fill
-  />
-</div>
 
 
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import styles from "./Countdown.module.css";
+import Image from 'next/image';
 
 function TimeCard({ value, label }) {
   return (
@@ -75,6 +76,18 @@ export default function Countdown() {
 
   return (
     <section className={styles.countdownSection}>
+            {/* =====================================================
+    BOTTOM WAVES
+===================================================== */}
+
+
+  <Image
+    src="/svg/hero/waves/wave.svg"
+    alt=""
+    fill
+    className={styles.wave}
+  />
+
 
       <h2 className={styles.title}>
         LE GRAND JOUR APPROCHE

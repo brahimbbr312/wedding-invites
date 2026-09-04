@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Header from '../Header/Header';
 import styles from "./Hero.module.css";
 import BotanicalTree from './BotanicalTree';
-
+import styl from './BotanicalTree.module.css';
 
 
 export default function Hero({ onOpenMenu }) {
@@ -32,6 +32,10 @@ export default function Hero({ onOpenMenu }) {
             className={styles.heroArch}
           />
         </div>
+        
+
+
+
 
 <div className={styles.leftTree}>
         <BotanicalTree side="left" />

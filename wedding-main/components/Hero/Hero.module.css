@@ -16,14 +16,12 @@
     svh is better than vh on mobile because it
     accounts for the browser's mobile UI.
   */
-  height: 60svh;
+  height: 85svh;
 
   overflow: hidden;
   position: sticky;
   top: 0;
 
-  width: 100%;
-  height: 100vh;
 
   z-index: 1;
 
@@ -56,6 +54,47 @@
   height: 45%;
 }
 
+
+.leftFlower,
+.leftFlower2 {
+  position: absolute;
+  height: auto;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: center;
+  animation: flowerPop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 4.25s forwards;
+}
+
+.leftFlower {
+  width: 60px;
+  bottom: 20px;
+  left: 35px;
+}
+
+.leftFlower2 {
+  width: 70px;
+  bottom: 75px; /* different position */
+  left: 2px;
+  animation-delay: 4.45s; /* pops slightly after the first */
+}
+
+@keyframes flowerPop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .rightTopTree {
   position: absolute;
   right: 2%;
@@ -67,6 +106,22 @@
   right: -2%;
   bottom: 0;
 
+}
+
+.rightFlower {
+  position: absolute;
+  width: 80px;
+  height: auto;
+
+  /* Adjust to place it on the right tree */
+  bottom: 30px;
+  right: 40px;
+
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: center;
+
+  animation: flowerPop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 4.25s forwards;
 }
 
 
@@ -110,7 +165,7 @@
 
   object-fit: contain;
   top: auto !important;
-  bottom: 10% !important;
+  bottom: 12% !important;
   object-position: center top;
   width: 68svw !important;
   left: initial !important;

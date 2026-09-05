@@ -14,7 +14,7 @@
 
   z-index: 8;
   pointer-events: none;
-   filter: drop-shadow(0 -50px 26px #e1cdba);
+   filter: drop-shadow(0 -50px 26px #e1cdba86);
 }
 
 .countdownSection {

@@ -41,12 +41,33 @@ export default function Hero({ onOpenMenu }) {
 
 <div className={styles.leftTree}>
         <BotanicalTree side="left" />
+          <Image
+    src="/images/Hero/flower-left2.webp"
+    alt=""
+    width={70}
+    height={70}
+    className={styles.leftFlower2}
+  />
+          <Image
+    src="/images/Hero/flower-left.webp"
+    alt=""
+    width={80}
+    height={80}
+    className={styles.leftFlower}
+  />
       </div>
 <div className={styles.rightTopTree}>
         <RightTopTree side="right" />
       </div>
 <div className={styles.rightTree}>
         <RightTree side="right" />
+          <Image
+    src="/images/Hero/flower-right.webp"
+    alt=""
+    width={80}
+    height={80}
+    className={styles.rightFlower}
+  />
       </div>
 
 

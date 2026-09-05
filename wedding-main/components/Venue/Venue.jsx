@@ -32,15 +32,15 @@ export default function Location() {
             </h3>
 
             <p>
-              Adresse de la réception
+              Salle Des Fêtes Andalous
               <br />
-              Ville, Pays
+              Misserghin, Oran
             </p>
           </div>
 
         </div>
 
-        <Link href="/location" passHref>
+        <Link href="https://maps.app.goo.gl/Cg47iwp4F3WSjSyS7?g_st=ac" className={styles.mapImg} passHref>
         <div className={styles.mapImg}>
 
           <Image
@@ -51,7 +51,7 @@ export default function Location() {
         </div>
         </Link>
 
-        <button className={styles.mapButton}>
+        <Link href="https://maps.app.goo.gl/Cg47iwp4F3WSjSyS7?g_st=ac" passHref className={styles.mapButton}>
   <svg
     width="20"
     height="20"
@@ -74,7 +74,7 @@ export default function Location() {
   </svg>
 
   <span>Voir l’itinéraire</span>
-</button>
+</Link>
 
       </div>
 

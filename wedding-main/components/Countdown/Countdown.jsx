@@ -83,6 +83,112 @@ export default function Countdown() {
 
   return (
     <section className={styles.countdownSection}>
+
+      
+<div className={styles.petalLayer}>
+
+  <Image
+    src="/svg/hero/petals/petal.svg"
+    alt=""
+    width={28}
+    height={20}
+    className={styles.petal}
+    style={{
+  '--x': '8%',
+  '--y': '18%',
+  '--size': '18px',
+  '--duration': '18s',
+  '--delay': '-5s',
+  '--rotation': '35deg',
+  '--drift': '55px',
+}}
+  />
+  <Image
+    src="/svg/hero/petals/petal.svg"
+    alt=""
+    width={28}
+    height={20}
+    className={styles.petal}
+    style={{
+  '--x': '10%',
+  '--y': '38%',
+  '--size': '18px',
+  '--duration': '18s',
+  '--delay': '-5s',
+  '--rotation': '35deg',
+  '--drift': '55px',
+}}
+  />
+
+  <Image
+    src="/svg/hero/petals/petal.svg"
+    alt=""
+    width={28}
+    height={20}
+    className={styles.petal}
+    style={{
+  '--x': '78%',
+  '--y': '30%',
+  '--size': '15px',
+  '--duration': '22s',
+  '--delay': '-11s',
+  '--rotation': '70deg',
+  '--drift': '-40px',
+}}
+  />
+
+  <Image
+    src="/svg/hero/petals/petal.svg"
+    alt=""
+    width={28}
+    height={20}
+    className={styles.petal}
+    style={{
+  '--x': '12%',
+  '--y': '70%',
+  '--size': '25px',
+  '--duration': '25s',
+  '--delay': '-8s',
+  '--rotation': '-20deg',
+  '--drift': '65px',
+}}
+  />
+
+  <Image
+    src="/svg/hero/petals/petal.svg"
+    alt=""
+    width={28}
+    height={20}
+    className={styles.petal}
+    style={{
+      '--x': '91%',
+      '--y': '83%',
+      '--size': '21px',
+      '--duration': '14s',
+      '--delay': '-9s',
+      '--rotation': '-45deg',
+      '--drift': '-60px',
+    }}
+  />
+
+  <Image
+    src="/svg/hero/petals/petal.svg"
+    alt=""
+    width={28}
+    height={20}
+    className={styles.petal}
+ style={{
+  '--x': '9%',
+  '--y': '55%',
+  '--size': '18px',
+  '--duration': '18s',
+  '--delay': '-5s',
+  '--rotation': '35deg',
+  '--drift': '55px',
+}}
+  />
+
+</div>
             {/* =====================================================
     BOTTOM WAVES
 ===================================================== */}

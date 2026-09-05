@@ -16,7 +16,7 @@
     svh is better than vh on mobile because it
     accounts for the browser's mobile UI.
   */
-  height: 85svh;
+  height: 65svh;
 
   overflow: hidden;
   position: sticky;
@@ -66,15 +66,15 @@
 }
 
 .leftFlower {
-  width: 60px;
-  bottom: 20px;
-  left: 35px;
+  width: 50px;
+  bottom: 15px;
+  left: 20px;
 }
 
 .leftFlower2 {
   width: 70px;
-  bottom: 75px; /* different position */
-  left: 2px;
+  bottom: 50px; /* different position */
+  left: -15px;
   animation-delay: 4.45s; /* pops slightly after the first */
 }
 
@@ -97,8 +97,8 @@
 
 .rightTopTree {
   position: absolute;
-  right: 2%;
-  bottom: 50%;
+  right: 10%;
+  bottom: 60%;
   z-index: -1;
 }
 .rightTree {
@@ -140,7 +140,9 @@
     This leaves room for the flowers on both sides.
   */
 
-  width: 63%;
+  width: 58%;
+  max-width: 230px;
+  min-width: 200px;
 
   height: 100%;
 
@@ -167,7 +169,6 @@
   top: auto !important;
   bottom: 12% !important;
   object-position: center top;
-  width: 68svw !important;
   left: initial !important;
   right: initial !important;
   height: auto !important;
@@ -189,7 +190,7 @@
   position: absolute;
   z-index: 10;
 
-  bottom: 16%;
+  bottom: 13%;
   left: 50%;
   gap: 6px;
   transform: translateX(-50%);
@@ -573,160 +574,4 @@
     drop-shadow(0 0 5px rgba(189, 146, 82, 0.25));
 }
 
-/* ============================================================
-   PETALS
-============================================================ */
-
-.petalLayer {
-  position: absolute;
-
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  z-index: 20;
-
-  pointer-events: none;
-
-  overflow: hidden;
-}
-
-
-.petal {
-  position: absolute;
-
-  top: var(--y);
-  left: var(--x);
-
-  width: var(--size);
-  height: auto;
-
-  display: block;
-
-  filter: blur(0.7px);
-
-  opacity: 0.7;
-
-  transform-origin: center center;
-
-  animation:
-    petalFloat var(--duration, 18s)
-    ease-in-out
-    var(--delay, 0s)
-    infinite;
-
-  will-change: transform;
-}
-
-
-@keyframes petalFloat {
-
-  /* Starting position */
-  0% {
-    transform:
-      translateX(0)
-      translateY(0)
-      rotate(var(--rotation));
-  }
-
-  /* Move far to one side */
-  25% {
-    transform:
-      translateX(calc(var(--travel) * 0.45))
-      translateY(-35px)
-      rotate(calc(var(--rotation) + 35deg));
-  }
-
-  /* Continue across */
-  50% {
-    transform:
-      translateX(var(--travel))
-      translateY(20px)
-      rotate(calc(var(--rotation) - 25deg));
-  }
-
-  /* Come back / change direction */
-  75% {
-    transform:
-      translateX(calc(var(--travel) * 0.45))
-      translateY(50px)
-      rotate(calc(var(--rotation) + 30deg));
-  }
-
-  /* Return */
-  100% {
-    transform:
-      translateX(0)
-      translateY(0)
-      rotate(var(--rotation));
-  }
-}
-
-/* ============================================================
-   SLOW PETAL MOVEMENT + JIGGLE
-============================================================ */
-
-@keyframes petalFloat {
-
-  0% {
-    transform:
-      translate3d(0, 0, 0)
-      rotate(var(--rotation, 0deg));
-  }
-
-  20% {
-    transform:
-      translate3d(
-        calc(var(--drift, 40px) * 0.25),
-        -5px,
-        0
-      )
-      rotate(
-        calc(var(--rotation, 0deg) + 8deg)
-      );
-  }
-
-  40% {
-    transform:
-      translate3d(
-        calc(var(--drift, 40px) * 0.55),
-        3px,
-        0
-      )
-      rotate(
-        calc(var(--rotation, 0deg) - 6deg)
-      );
-  }
-
-  60% {
-    transform:
-      translate3d(
-        calc(var(--drift, 40px) * 0.8),
-        -3px,
-        0
-      )
-      rotate(
-        calc(var(--rotation, 0deg) + 7deg)
-      );
-  }
-
-  80% {
-    transform:
-      translate3d(
-        var(--drift, 40px),
-        5px,
-        0
-      )
-      rotate(
-        calc(var(--rotation, 0deg) - 5deg)
-      );
-  }
-
-  100% {
-    transform:
-      translate3d(0, 0, 0)
-      rotate(var(--rotation, 0deg));
-  }
-}
 

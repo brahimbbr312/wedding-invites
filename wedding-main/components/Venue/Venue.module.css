@@ -7,7 +7,17 @@
     position: relative;
     z-index: 2;
 }
-
+.mapButton{
+  text-decoration: none;
+  color: inherit;
+  border: none;
+}
+.mapImg{
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+}
 .card {
   padding:
     30px

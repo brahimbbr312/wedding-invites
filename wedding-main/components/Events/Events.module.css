@@ -4,407 +4,218 @@
 
   width: 100%;
 
-  padding: 55px 12px 65px;
+  padding: 0px 12px 45px 12px;
 
-  text-align: center;
+  
 
   background:
   
-   #fff7ee;
+   #faf6f0;
 }
 
-
-/* =========================
-   TITRES
-========================= */
-
-.subtitle {
-  margin-bottom: 8px;
-
-  color: #aa7e40;
-
-  font-family: "Cormorant Garamond", Georgia, serif;
-
-  font-size: 11px;
-
-  font-weight: 600;
-
-  letter-spacing: 3px;
-}
-
-
-.section h2 {
-  margin: 0;
-
-  color: #75464d;
-
-  font-family: "Cormorant Garamond", Georgia, serif;
-
-  font-size: 30px;
-
-  font-weight: 500;
-
-  letter-spacing: 2px;
-}
-
-
-/* =========================
-   ORNEMENT
-========================= */
-
-.ornament {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 10px;
-
-  margin: 18px auto 48px;
-}
-
-.ornament span {
-  width: 55px;
-
-  height: 1px;
-
-  background: #b89560;
-}
-
-.ornament b {
-  color: #aa7e40;
-
-  font-size: 13px;
-
-  font-weight: 400;
-}
-
-
-/* =========================
-   ROUTE
-========================= */
-
-.route {
-  display: flex;
-
-  align-items: flex-start;
-
-  width: 100%;
-
-  max-width: 430px;
-
-  margin: 0 auto;
-}
-
-
-/* =========================
-   ÉTAPE
-========================= */
-
-.stop {
-  flex: 1;
-
-  min-width: 0;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-}
-
-
-/* =========================
-   CERCLE
-========================= */
-
-.circle {
-  position: relative;
-
-  z-index: 2;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  width: 72px;
-
-  height: 72px;
-
-  flex-shrink: 0;
-
-  color: #75464d;
-
-  background:
-    radial-gradient(
-      circle,
-      #fffdf9 0%,
-      #f8f1e7 100%
-    );
-
-  border: 1.5px solid #b89560;
-
-  border-radius: 50%;
-
-  box-shadow:
-    0 5px 18px
-    rgba(80, 55, 40, 0.08);
-}
-
-
-/* petit cercle intérieur */
-
-.circle::after {
-  content: "";
-
-  position: absolute;
-
-  inset: 5px;
-
-  border: 1px dashed #c9aa72;
-
-  border-radius: 50%;
-}
-
-
-/* =========================
-   ICON SVG
-========================= */
-
-.iconSvg {
-  position: relative;
-
-  z-index: 2;
-
-  width: 43px;
-
-  height: 43px;
-
-  color: #75464d;
-}
-
-
-/* =========================
-   POINT GPS
-========================= */
-
-.pin {
-  position: relative;
-
-  width: 22px;
-
-  height: 28px;
-
-  margin-top: 20px;
-
-  background: #aa7e40;
-
-  border-radius:
-    50%
-    50%
-    50%
-    0;
-
-  transform: rotate(-45deg);
-}
-
-
-/* cercle du GPS */
-
-.pin span {
-  position: absolute;
-
-  width: 7px;
-
-  height: 7px;
-
-  top: 7px;
-
-  left: 7px;
-
-  background: #f7f3ed;
-
-  border-radius: 50%;
-}
-
-
-/* =========================
-   NOMS
-========================= */
-
-.stop h3 {
-  width: 100%;
-
-  margin-top: 30px;
-
-  color: #75464d;
-
-  font-family:
-    "Cormorant Garamond",
-    Georgia,
-    serif;
-
-  font-size: 13px;
-
-  font-weight: 600;
-
-  line-height: 1.2;
-
-  letter-spacing: 0.6px;
-}
-
-
-/* =========================
-   PETIT ORNEMENT
-========================= */
-
-.separator {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 4px;
-
-  width: 85%;
-
-  margin-top: 10px;
-}
-
-.separator span {
-  flex: 1;
-
-  height: 1px;
-
-  background: #c9ae7d;
-}
-
-.separator b {
-  color: #aa7e40;
-
-  font-size: 7px;
-
-  font-weight: 400;
-}
-
-
-/* =========================
-   DESCRIPTION
-========================= */
-
-.stop p {
-  margin-top: 9px;
-
-  color: #aa7e40;
-
-  font-family: 'Allura', cursive;
+.sectionTitle {
+  font-family: 'Playfair Display', serif;
 
   font-size: 18px;
 
-  line-height: 1.1;
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  color: #000000;
+
+  margin : 0;
+  position: relative;
+  top: -9px;
+  width: fit-content;
+  padding: 0 10px;
+  z-index: 2;
+  background: #FAF5F0;
+}
+
+.card {
+  padding:
+    0px
+    20px;
+
+  text-align: center;
+  
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cortegeImage {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: fill !important;
+  filter: drop-shadow(0 0px 22px #f2e2d9);
+}
+
+.routeContainer {
+  position: relative;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================================
+   ROUTE SVG
+   ========================================================= */
+
+.routeLine {
+  position: absolute;
+
+  /*
+    The line occupies the left portion of the component.
+    It sits BEHIND the location images.
+  */
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+
+  width: 42%;
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+.routeLine img {
+  object-fit: fill;
 }
 
 
-/* =========================
-   CONNEXION / PETITS POINTS
-========================= */
+/* =========================================================
+   EACH STOP
+   ========================================================= */
 
-.connection {
-  width: 25px;
-
-  height: 72px;
-
-  flex-shrink: 1;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-}
-
-
-/* ligne de petits points */
-
-.dots {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 4px;
+.stop {
+  position: relative;
+  z-index: 2;
 
   width: 100%;
+
+  display: grid;
+  grid-template-columns: 42% 58%;
+  align-items: center;
 }
 
 
-/* chaque point */
+/* =========================================================
+   LOCATION IMAGE
+   ========================================================= */
 
-.dots span {
-  width: 4px;
+.location {
+  position: relative;
 
-  height: 4px;
+  width: min(280px, 85%);
+  aspect-ratio: 1 / 1;
 
-  flex-shrink: 0;
+  justify-self: center;
 
-  background: #aa7e40;
-
-  border-radius: 50%;
+  z-index: 3;
+  background: #FAF5F0;
 }
 
 
-/* =========================
+/* =========================================================
+   TEXT CARD
+   ========================================================= */
+
+.info {
+  width: 90%;
+
+  min-height: 130px;
+
+  padding: 22px 40px;
+
+  display: flex;
+  align-items: center;
+
+}
+
+.infoCard {
+
+  border: 1px solid rgba(180, 120, 120, 0.25);
+  border-radius: 20px;
+
+  background: rgba(255, 250, 247, 0.65);
+
+  box-sizing: border-box;
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+.info h3 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(12px, 2vw, 20px);
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: #873e50;
+}
+
+.info p {
+  margin: 8px 0 0;
+
+  font-family: 'Allura', cursive;
+  font-size: clamp(24px, 3vw, 38px);
+
+  color: #a05262;
+}
+
+
+
+/* =========================================================
    MOBILE
-========================= */
+   ========================================================= */
 
-@media (max-width: 380px) {
+@media (max-width: 700px) {
 
-  .section {
-    padding-left: 7px;
-    padding-right: 7px;
+  .routeSection {
+    padding: 30px 10px;
   }
 
-  .section h2 {
-    font-size: 27px;
+
+  .stop {
+    grid-template-columns: 35% 65%;
   }
 
-  .circle {
-    width: 62px;
-    height: 62px;
+  .location {
+    width: 50%;
   }
 
-  .iconSvg {
-    width: 37px;
-    height: 37px;
+  .info {
+    width: 100%;
+    min-height: 100px;
+
+    padding: 15px 15px;
+
+    border-radius: 14px;
   }
 
-  .connection {
-    width: 16px;
+
+
+  .info p {
+    font-size: clamp(19px, 5vw, 27px);
+    margin-top: 4px;
   }
 
-  .dots {
-    gap: 3px;
-  }
-
-  .dots span {
-    width: 3px;
-    height: 3px;
-  }
-
-  .stop h3 {
-    font-size: 10px;
-  }
-
-  .stop p {
-    font-size: 16px;
-  }
-
-  .separator {
-    width: 90%;
+  .routeLine {
+    width: 18%;
+    top: 10px;
+    bottom: 10px;
   }
 }

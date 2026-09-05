@@ -12,17 +12,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://entodermal-comically-bree.ngrok-free.dev"),
+
   title: "Mohamed & Abir",
   description: "Notre mariage — 23 Novembre 2026",
 
   openGraph: {
     title: "Mohamed & Abir",
     description: "Notre mariage — 23 Novembre 2026",
+    type: "website",
     images: [
       {
-        url: "/images/og-wedding.jpg",
+        url: "/images/og-wedding.webp",
         width: 1200,
-        height: 630,
+        height: 930,
         alt: "Mohamed & Abir — Notre mariage",
       },
     ],

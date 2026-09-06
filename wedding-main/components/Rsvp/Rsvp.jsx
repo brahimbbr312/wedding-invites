@@ -28,7 +28,7 @@ export default function RSVP() {
           className={styles.yes}
           onClick={() => setResponse("yes")}
         >
-          OUI, AVEC PLAISIR !
+          OUI, AVEC PLAISIR    ♥
         </button>
 
         <button

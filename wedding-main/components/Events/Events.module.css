@@ -1,122 +1,410 @@
+
 .section {
-  padding:
-    10px
-    15px
-    45px;
+  position: relative;
+
+  width: 100%;
+
+  padding: 55px 12px 65px;
 
   text-align: center;
-  background: #f3e8dc;
-}
-
-.section > h2 {
-  margin-bottom: 20px;
-
-  color: #75464d;
-
-  font-size: 19px;
-
-  font-weight: 600;
-
-  letter-spacing: 1px;
-}
-
-.events {
-  display: grid;
-
-  grid-template-columns:
-    repeat(3, 1fr);
-
-  padding:
-    23px
-    5px;
 
   background:
-    rgba(255, 255, 255, 0.4);
-
-  border-radius: 20px;
+  
+   #fff7ee;
 }
 
-.event {
-  padding:
-    0
-    5px;
-}
 
-.event + .event {
-  border-left:
-    1px dashed
-    rgba(150, 115, 80, 0.3);
-}
+/* =========================
+   TITRES
+========================= */
 
-.icon {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  width: 62px;
-  height: 62px;
-
-  margin:
-    0
-    auto
-    12px;
+.subtitle {
+  margin-bottom: 8px;
 
   color: #aa7e40;
 
-  border:
-    1px solid
-    #cbb485;
+  font-family: "Cormorant Garamond", Georgia, serif;
 
-  border-radius: 50%;
+  font-size: 11px;
 
-  font-size: 22px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
 }
 
-.event h3 {
-  min-height: 30px;
+
+.section h2 {
+  margin: 0;
 
   color: #75464d;
 
-  font-size: 11px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 30px;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   ORNEMENT
+========================= */
+
+.ornament {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin: 18px auto 48px;
+}
+
+.ornament span {
+  width: 55px;
+
+  height: 1px;
+
+  background: #b89560;
+}
+
+.ornament b {
+  color: #aa7e40;
+
+  font-size: 13px;
+
+  font-weight: 400;
+}
+
+
+/* =========================
+   ROUTE
+========================= */
+
+.route {
+  display: flex;
+
+  align-items: flex-start;
+
+  width: 100%;
+
+  max-width: 430px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   ÉTAPE
+========================= */
+
+.stop {
+  flex: 1;
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+/* =========================
+   CERCLE
+========================= */
+
+.circle {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 72px;
+
+  height: 72px;
+
+  flex-shrink: 0;
+
+  color: #75464d;
+
+  background:
+    radial-gradient(
+      circle,
+      #fffdf9 0%,
+      #f8f1e7 100%
+    );
+
+  border: 1.5px solid #b89560;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 5px 18px
+    rgba(80, 55, 40, 0.08);
+}
+
+
+/* petit cercle intérieur */
+
+.circle::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 5px;
+
+  border: 1px dashed #c9aa72;
+
+  border-radius: 50%;
+}
+
+
+/* =========================
+   ICON SVG
+========================= */
+
+.iconSvg {
+  position: relative;
+
+  z-index: 2;
+
+  width: 43px;
+
+  height: 43px;
+
+  color: #75464d;
+}
+
+
+/* =========================
+   POINT GPS
+========================= */
+
+.pin {
+  position: relative;
+
+  width: 22px;
+
+  height: 28px;
+
+  margin-top: 20px;
+
+  background: #aa7e40;
+
+  border-radius:
+    50%
+    50%
+    50%
+    0;
+
+  transform: rotate(-45deg);
+}
+
+
+/* cercle du GPS */
+
+.pin span {
+  position: absolute;
+
+  width: 7px;
+
+  height: 7px;
+
+  top: 7px;
+
+  left: 7px;
+
+  background: #f7f3ed;
+
+  border-radius: 50%;
+}
+
+
+/* =========================
+   NOMS
+========================= */
+
+.stop h3 {
+  width: 100%;
+
+  margin-top: 30px;
+
+  color: #75464d;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  letter-spacing: 0.6px;
+}
+
+
+/* =========================
+   PETIT ORNEMENT
+========================= */
+
+.separator {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4px;
+
+  width: 85%;
+
+  margin-top: 10px;
+}
+
+.separator span {
+  flex: 1;
+
+  height: 1px;
+
+  background: #c9ae7d;
+}
+
+.separator b {
+  color: #aa7e40;
+
+  font-size: 7px;
+
+  font-weight: 400;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.stop p {
+  margin-top: 9px;
+
+  color: #aa7e40;
+
+  font-family: 'Allura', cursive;
+
+  font-size: 18px;
 
   line-height: 1.1;
 }
 
-.event strong {
-  display: block;
 
-  margin-top: 7px;
+/* =========================
+   CONNEXION / PETITS POINTS
+========================= */
 
-  color: #aa7e40;
+.connection {
+  width: 25px;
 
-  font-size: 20px;
+  height: 72px;
+
+  flex-shrink: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
 }
 
-.event p {
-  margin-top: 5px;
 
-  color: #5c5051;
+/* ligne de petits points */
 
-  font-size: 12px;
+.dots {
+  display: flex;
 
-  line-height: 1.25;
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4px;
+
+  width: 100%;
 }
 
-@media (max-width: 360px) {
 
-  .icon {
-    width: 54px;
-    height: 54px;
+/* chaque point */
 
-    font-size: 19px;
+.dots span {
+  width: 4px;
+
+  height: 4px;
+
+  flex-shrink: 0;
+
+  background: #aa7e40;
+
+  border-radius: 50%;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+  .section {
+    padding-left: 7px;
+    padding-right: 7px;
   }
 
-  .event h3 {
-    font-size: 9px;
+  .section h2 {
+    font-size: 27px;
   }
 
-  .event p {
+  .circle {
+    width: 62px;
+    height: 62px;
+  }
+
+  .iconSvg {
+    width: 37px;
+    height: 37px;
+  }
+
+  .connection {
+    width: 16px;
+  }
+
+  .dots {
+    gap: 3px;
+  }
+
+  .dots span {
+    width: 3px;
+    height: 3px;
+  }
+
+  .stop h3 {
     font-size: 10px;
+  }
+
+  .stop p {
+    font-size: 16px;
+  }
+
+  .separator {
+    width: 90%;
   }
 }

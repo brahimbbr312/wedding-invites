@@ -20,7 +20,7 @@
 .countdownSection {
   width: 100%;
   height: 40svh;
-  padding: 40px 20px;
+  padding: 40px 20px 0px 20px;
   text-align: center;
   background: #FAF6F0;
   position: relative;
@@ -54,40 +54,46 @@
 .timeCard {
   padding: 17px 4px;
 
-  background: rgba(255, 255, 255, 0.7);
 
-  border: 1px solid rgba(170, 126, 64, 0.2);
+  position: relative;
+}
 
-  border-radius: 12px;
-
-  box-shadow:
-    0 6px 15px rgba(70, 50, 35, 0.05);
+.timeBg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .number {
   display: block;
+  position: relative;
 
   color: #75464d;
 
   font-family: "Cormorant Garamond", Georgia, serif;
+  font-variant-numeric: lining-nums tabular-nums;
 
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 800;
 
   line-height: 1;
 }
 
 .label {
   display: block;
+  position: relative;
 
-  margin-top: 8px;
+  margin-top: 4px;
 
   color: #67595a;
 
   font-family: "Cormorant Garamond", Georgia, serif;
 
   font-size: 9px;
-  font-weight: 500;
+  font-weight: 600;
 
   letter-spacing: 0.8px;
 }
@@ -96,7 +102,7 @@
 
 @media (max-width: 360px) {
   .countdownSection {
-    padding: 35px 12px;
+    padding: 35px 12px 0 12px;
   }
 
   .title {

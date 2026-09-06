@@ -1,10 +1,17 @@
 import styles from "./InvitationMessage.module.css";
+import Image from "next/image";
 
 export default function Invitation() {
   return (
     <section className={styles.section}>
 
       <div className={styles.card}>
+        <Image
+          src="/svg/Message/msgBg.svg"
+          alt="background"
+          className={styles.msgBg}
+          fill
+        />
 
         <h2>
           Nous avons le plaisir
@@ -13,7 +20,12 @@ export default function Invitation() {
         </h2>
 
         <div className={styles.ornament}>
-          ✦ ───── ✦
+          <Image
+            src="/images/msgFlower.webp"
+            alt="ornament"
+            width={100}
+            height={35}
+          />
         </div>
 
         <p>
@@ -24,7 +36,12 @@ export default function Invitation() {
         </p>
 
         <div className={styles.ornament}>
-          ──────────
+          <Image
+            src="/svg/Message/bottomLine.svg"
+            alt="ornament"
+            width={100}
+            height={35}
+          />
         </div>
 
       </div>

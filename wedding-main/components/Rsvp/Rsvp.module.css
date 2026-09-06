@@ -6,7 +6,7 @@
 
   text-align: center;
 
-     background: #f3e8dc;
+     background: #fff7ee;
 
 }
 
@@ -66,9 +66,13 @@
 /* YES */
 
 .yes {
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
   color: white;
 
-  background: #75464d;
+  background: #aa7e40;
 
   border:
     1px solid
@@ -86,6 +90,10 @@
 /* NO */
 
 .no {
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
   color: #75464d;
 
   background: transparent;

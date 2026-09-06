@@ -7,6 +7,13 @@ import Image from 'next/image';
 function TimeCard({ value, label }) {
   return (
     <div className={styles.timeCard}>
+      <Image
+        src="/svg/time/timer.svg"
+        alt=""
+        width={40}
+        height={40}
+        className={styles.timeBg}
+      />
       <strong className={styles.number}>
         {String(value).padStart(2, "0")}
       </strong>

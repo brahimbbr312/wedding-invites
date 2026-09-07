@@ -1,0 +1,127 @@
+/* BotanicalTree.module.css */
+
+.tree {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+  overflow: visible;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+/*
+  This SVG does not have branch classes.
+  The actual branch/trunk paths are the paths with:
+    stroke="#543F25"
+
+  Their order in the SVG is:
+    3  = main trunk
+    4  = large right branch
+    5  = upper right branch
+    6  = middle right branch
+    7  = lower right branch
+    27 = small left branch
+    35 = large left branch
+
+  The SVG's viewBox is 0 0 99 141 and the paths do not have
+  pathLength="1", so we use a normalized dash length through
+  CSS variables based on the actual path geometry.
+*/
+
+.svg :global(path[stroke="#543F25"]) {
+  fill: none;
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation-name: growBranch;
+  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+/* Main trunk */
+.svg :global(path:nth-of-type(3)) {
+  animation-delay: 0s;
+  animation-duration: 3.2s;
+}
+
+/* Large right branch */
+.svg :global(path:nth-of-type(4)) {
+  animation-delay: 2.0s;
+  animation-duration: 1.5s;
+}
+
+/* Upper right branch */
+.svg :global(path:nth-of-type(5)) {
+  animation-delay: 2.25s;
+  animation-duration: 1.25s;
+}
+
+/* Middle right branch */
+.svg :global(path:nth-of-type(6)) {
+  animation-delay: 2.45s;
+  animation-duration: 1.2s;
+}
+
+/* Lower right branch */
+.svg :global(path:nth-of-type(7)) {
+  animation-delay: 2.7s;
+  animation-duration: 1.25s;
+}
+
+/* Small left branch */
+.svg :global(path:nth-of-type(27)) {
+  animation-delay: 3.0s;
+  animation-duration: 1.0s;
+}
+
+/* Large left branch */
+.svg :global(path:nth-of-type(35)) {
+  animation-delay: 2.9s;
+  animation-duration: 1.4s;
+}
+
+@keyframes growBranch {
+  from {
+    stroke-dashoffset: 180;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*
+  Everything that is not a branch/trunk starts hidden.
+  Once the branch structure has grown, the leaves/details fade in.
+*/
+.svg :global(path:not([stroke="#543F25"])) {
+  opacity: 0;
+  animation: foliageAppear 1.15s ease-out 4.15s forwards;
+}
+
+@keyframes foliageAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svg :global(path) {
+    animation: none;
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+

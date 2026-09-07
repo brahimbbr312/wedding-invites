@@ -24,6 +24,7 @@
   text-align: center;
   background: #FAF6F0;
   position: relative;
+  z-index: 2;
 }
 
 .title {

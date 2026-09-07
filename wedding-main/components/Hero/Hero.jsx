@@ -5,6 +5,8 @@ import Header from '../Header/Header';
 import styles from "./Hero.module.css";
 import BotanicalTree from './BotanicalTree';
 import styl from './BotanicalTree.module.css';
+import RightTopTree from './rightTopTree/RightTopTree';
+import RightTree from './rightTree/RightTree';
 
 
 export default function Hero({ onOpenMenu }) {
@@ -39,6 +41,12 @@ export default function Hero({ onOpenMenu }) {
 
 <div className={styles.leftTree}>
         <BotanicalTree side="left" />
+      </div>
+<div className={styles.rightTopTree}>
+        <RightTopTree side="right" />
+      </div>
+<div className={styles.rightTree}>
+        <RightTree side="right" />
       </div>
 
 

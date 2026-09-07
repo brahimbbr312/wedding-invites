@@ -1,4 +1,6 @@
+import Link from "next/link";
 import styles from "./Venue.module.css";
+import Image from "next/image";
 
 export default function Location() {
   return (
@@ -9,6 +11,14 @@ export default function Location() {
         <h2>
           LIEU DE LA RÉCEPTION
         </h2>
+                <div className={styles.ornament}>
+          <Image
+            src="/svg/Message/bottomLine.svg"
+            alt="ornament"
+            width={100}
+            height={35}
+          />
+        </div>
 
         <div className={styles.location}>
 
@@ -30,11 +40,41 @@ export default function Location() {
 
         </div>
 
-        <p className={styles.note}>
-          Nous avons hâte de vous accueillir
-          et de partager cette belle journée
-          avec vous.
-        </p>
+        <Link href="/location" passHref>
+        <div className={styles.mapImg}>
+
+          <Image
+            src="/images/location/location.webp"
+            alt="map"
+            fill
+          />
+        </div>
+        </Link>
+
+        <button className={styles.mapButton}>
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 21C12 21 19 14.5 19 8.5C19 4.91 15.87 2 12 2C8.13 2 5 4.91 5 8.5C5 14.5 12 21 12 21Z"
+      stroke="currentColor"
+      strokeWidth="1.8"
+    />
+    <circle
+      cx="12"
+      cy="8.5"
+      r="2.5"
+      stroke="currentColor"
+      strokeWidth="1.8"
+    />
+  </svg>
+
+  <span>Voir l’itinéraire</span>
+</button>
 
       </div>
 

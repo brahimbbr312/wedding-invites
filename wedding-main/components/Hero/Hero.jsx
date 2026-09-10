@@ -357,7 +357,7 @@ export default function Hero({ onOpenMenu }) {
         <div className={styles.names}>
 
           <div className={styles.name}>
-            Mohamed
+            Amine
           </div>
 
           <div className={styles.and}>

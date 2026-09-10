@@ -1,3 +1,4 @@
+import Loading from "@/components/Loading/Loading";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Countdown from "@/components/Countdown/Countdown";
@@ -10,8 +11,10 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.mainWrapper}>
+      
       <Header />
       <main className={styles.main}>
+        <Loading />
         <Hero />
         <Countdown />
         <InvitationMessage />

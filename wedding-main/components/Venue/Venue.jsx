@@ -40,7 +40,7 @@ export default function Location() {
 
         </div>
 
-        <Link href="https://maps.app.goo.gl/Cg47iwp4F3WSjSyS7?g_st=ac" className={styles.mapImg} passHref>
+        <Link href="https://maps.app.goo.gl/j3Bko1hoSuDg4pf28" className={styles.mapImg} passHref>
         <div className={styles.mapImg}>
 
           <Image
@@ -51,7 +51,7 @@ export default function Location() {
         </div>
         </Link>
 
-        <Link href="https://maps.app.goo.gl/Cg47iwp4F3WSjSyS7?g_st=ac" passHref className={styles.mapButton}>
+        <Link href="https://maps.app.goo.gl/j3Bko1hoSuDg4pf28" passHref className={styles.mapButton}>
   <svg
     width="20"
     height="20"

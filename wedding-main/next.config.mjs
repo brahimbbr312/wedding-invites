@@ -4,8 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/wedding-invites',
-  assetPrefix: '/wedding-invites/',
+  basePath: '/wedding-main',
+  assetPrefix: '/wedding-main/',
 };
-
-module.exports = nextConfig;
+export default nextConfig;

@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/wedding-main',
+  assetPrefix: '/wedding-main/',
 };
 
-export default nextConfig;
+module.exports = nextConfig;

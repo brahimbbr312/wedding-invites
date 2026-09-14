@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/wedding-main',
-  assetPrefix: '/wedding-main/',
+  basePath: '/wedding-invites',
+  assetPrefix: '/wedding-invites/',
 };
 
 module.exports = nextConfig;

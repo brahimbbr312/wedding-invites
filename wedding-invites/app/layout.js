@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://entodermal-comically-bree.ngrok-free.dev"),
+  metadataBase: new URL("https://wedding-invites.vercel.app"),
 
   title: "Mohamed & Abir",
   description: "Notre mariage — 23 Novembre 2026",

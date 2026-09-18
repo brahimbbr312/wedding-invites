@@ -1,13 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
+const nextConfig = {};
 
-  images: {
-    unoptimized: true,
-  },
-
-  basePath: '/wedding-invites',
-  assetPrefix: '/wedding-invites/',
-};
-
-module.exports = nextConfig;
+export default nextConfig;
